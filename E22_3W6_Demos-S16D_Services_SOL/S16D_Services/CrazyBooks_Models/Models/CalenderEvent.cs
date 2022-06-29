@@ -14,5 +14,7 @@ namespace CrazyBooks_Models.Models
         public DateTime DateEvent { get; set; }
         public string Title { get; set; }
         public string ShortDesc { get; set; }
+
+        public ICollection<Booking> Bookings { get; set; }
     }
 }
